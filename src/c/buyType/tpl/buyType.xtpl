@@ -1,0 +1,7 @@
+<div class="buy-type">
+    <div class="buy-type-wrap">
+        <div class="type-text"><span>购买方式</span></div>
+        <div class="direct" id="J_direct"><a href="javascript:void(0)">直接购买</a><span class="iconfont icon-selected"></span></div>
+        <div class="subscribe selected" id="J_subscribe"><a href="javascript:void(0)">预约定制</a><span class="iconfont icon-selected"></span></div>
+    </div>
+</div>

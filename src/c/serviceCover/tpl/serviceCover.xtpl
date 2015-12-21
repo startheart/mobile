@@ -1,0 +1,16 @@
+<div class="service-cover">
+    <div class="service-cover-wrap">
+        <div class="cover-text"><span>服务范围</span></div>
+        <div class="place" id="J_place">
+            <span class="icon iconfont icon-location"></span>
+            <span class="place-text" id="J_placeText">{{data}}</span>
+            <span class="icon iconfont icon-down"></span>
+        </div>
+        <div class="prompt"><span>100%送货入户</span></div>
+    </div>
+</div>
+<!-- 购买方式 -->
+<div id="J_buyType"></div>
+
+
+

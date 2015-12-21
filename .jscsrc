@@ -1,0 +1,11 @@
+{
+    "preset": "google",
+    "validateIndentation": 4,
+    "disallowMultipleVarDecl": null,
+    "maximumLineLength": {
+        "value": 120,
+        "allowComments": true,
+        "allowUrlComments": true,
+        "allowRegex": true
+    }
+}

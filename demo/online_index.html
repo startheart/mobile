@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>极有家装修服务detail-服务组件</title>
+    <script src="seed-min.js"></script>
+<script>
+    KISSY.config('packages', {
+        'jiyoujia-decoration-service': {
+            base: '/build/',
+            debug: true,
+            ignorePackageNameInUri: true,
+            combine: false
+        }
+    });
+</script>
+</head>
+<body>
+
+<!-- 服务范围 -->
+<div id="J_serviceCover"></div>
+
+
+<script type="text/javascript">
+    KISSY.use('jiyoujia-decoration-service/index', function(S, Index) {
+        Index.init();
+    });
+</script>
+</body>
+</html>

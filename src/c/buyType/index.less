@@ -1,0 +1,118 @@
+/**
+ * 购买方式
+ * @author yanting
+ */
+.buy-type {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC Light";
+    font-size: 14px;
+
+    @normal-color: #000000;
+    @highlight-color: #ff4200;
+    @border-color: #dddddd;
+    @dash-color: #d1d1d1;
+    @disableFont-color: #999999;
+
+    &.yellow {
+        @highlight-color: #ffbd00;
+    }
+    span {
+        color: #666666;
+    }
+    a {
+      color: @normal-color;
+      text-decoration: none;
+      &:link {
+        color: @normal-color;
+        text-decoration: none;
+      }
+      &:visited {
+        color: @normal-color;
+        text-decoration: none;
+      }
+      &:hover {
+        color: @highlight-color;
+        text-decoration: none;
+      }
+      &:active {
+        color: @normal-color;
+        text-decoration: none;
+      }
+    }
+    .clearfix() {
+      *zoom: 1;
+
+      &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+
+    .buy-type-wrap {
+        padding-top: 10px;
+        border-top: 1px solid @border-color;
+
+        .clearfix;
+    }
+    .type-text, .direct, .subscribe {
+        position: relative;
+        float: left;
+    }
+    .type-text span {
+        line-height: 30px;
+    }
+    .direct a, .subscribe a {
+        display: block;
+        border: 1px solid @border-color;
+        line-height: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        &:hover {
+            border: 2px solid @highlight-color;
+            color: @highlight-color;
+            line-height: 28px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    .direct {
+        margin-left: 18px;
+    }
+    .subscribe {
+        margin-left: 10px;
+    }
+    .disable a {
+        border: 1px dashed @dash-color;
+        cursor: not-allowed;
+        color: @disableFont-color;
+        &:hover {
+            color: @disableFont-color;
+            border: 1px dashed @dash-color;
+            line-height: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    .selected a {
+        border: 2px solid @highlight-color;
+        color: @highlight-color;
+        line-height: 28px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .icon-selected {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: @highlight-color;
+        font-size: 20px;
+        display: none;
+    }
+    .selected .icon-selected {
+        display: block;
+    }
+}

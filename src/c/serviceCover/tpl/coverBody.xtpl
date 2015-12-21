@@ -1,0 +1,7 @@
+<ul class="list">
+    {{#each(data)}}
+    <li class="list-item" data-code="{{this.code}}" data-value="{{this.name}}" data-type="{{this.type}}">
+        {{this.name}}
+    </li>
+    {{/each}}
+</ul>

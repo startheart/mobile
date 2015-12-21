@@ -1,0 +1,245 @@
+/**
+ * 服务范围
+ * @author yanting
+ */
+.service-cover {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC Light";
+    font-size:  14px;
+    color: #333333;
+
+    @normal-color: #000000;
+    @highlight-color: #ff4300;
+    @hover-bg-color: #fff7dc;
+    @arrow-color: #333333;
+    @location-color: #cfcfcf;
+
+    span {
+        color: #333333;
+    }
+
+    .clearfix() {
+      *zoom: 1;
+
+      &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+
+    .service-cover-wrap {
+        .clearfix;
+        margin-top: 10px;
+    }
+
+    .cover-text {
+        float: left;
+
+        & span {
+            color: #666666;
+            line-height: 30px;
+        }
+    }
+
+    .place {
+        float: left;
+        margin-left: 18px;
+        cursor: pointer;
+        border: 1px solid transparent;
+
+        .clearfix;
+
+        & span {
+            line-height: 30px;
+        }
+
+        &:hover {
+            background-color: @hover-bg-color;
+            border: 1px solid @highlight-color;
+
+            & span {
+                color: @highlight-color;
+            }
+        }
+
+        &.active {
+            background-color: @highlight-color;
+            border: 1px solid @highlight-color;
+
+            & span {
+                color: #ffffff;
+            }
+
+            & .icon-down {
+                   -moz-transform: rotate(180deg);
+                   -webkit-transform: rotate(180deg);
+                   -o-transform: rotate(180deg);
+                   -ms-transform: rotate(180deg);
+                   transform: rotate(180deg);
+            }
+        }
+    }
+    .icon-location {
+        float: left;
+        color: @location-color;
+        padding-left: 5px;
+    }
+    .place-text {
+        float: left;
+        padding-left: 5px;
+    }
+    .icon-down {
+        float: left;
+        color: @arrow-color;
+        font-size: 12px;
+    }
+    .prompt {
+        float: left;
+        margin-left: 20px;
+        & span {
+            line-height: 30px;
+        }
+    }
+
+}
+
+.popup-wrap {
+    @highlight-color: #ff4300;
+    @border-color: #e5e5e5;
+    @close-color: #666666;
+    @hover-bg-color: #fff7dc;
+    @close-bg-color: #dddddd;
+
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "Heiti SC Light";
+    font-size:  14px;
+    color: #333333;
+    border: 1px solid @highlight-color;
+    width: 490px;
+    padding: 20px 10px;
+    background: #ffffff;
+    position: relative;
+
+    .clearfix() {
+      *zoom: 1;
+
+      &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .icon-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: @close-color;
+        padding: 5px;
+        background-color: @close-bg-color;
+        cursor: pointer;
+
+        &:hover {
+            color: #ffffff;
+            background-color: @highlight-color;
+        }
+    }
+
+    .cover-title {
+        border-bottom: 1px solid @highlight-color;
+        height: 26px;
+        .clearfix;
+    }
+
+    .range {
+        float: left;
+        cursor: pointer;
+        padding-left: 5px;
+        border-left: 1px solid @border-color;
+        border-top: 1px solid @border-color;
+        border-right: 1px solid @border-color;
+
+        & span {
+            line-height: 24px;
+        }
+
+        &.selected {
+            position: relative;
+            border-left: 1px solid @highlight-color;
+            border-top: 1px solid @highlight-color;
+            border-right: 1px solid @highlight-color;
+            border-bottom: 1px solid #ffffff;
+        }
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .second-range {
+        margin-left: 5px;
+    }
+
+    .icon {
+        font-size: 12px;
+    }
+
+    .list {
+        padding-top: 10px;
+        .clearfix;
+    }
+
+    .list-item {
+        float: left;
+        display: inline-block;
+        cursor: pointer;
+        padding: 3px 15px;
+        margin-left: 2px;
+        margin-top: 2px;
+
+        &:hover {
+            color: #ffffff;
+            background-color: @highlight-color;
+        }
+
+        &.selected {
+            color: #ffffff;
+            background-color: @highlight-color;
+        }
+    }
+}
+
+.ks-overlay {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.ks-overlay-hidden {
+    visibility: hidden;
+}
+
+.ks-overlay-mask-hidden {
+    display: none;
+}
+
+.ks-overlay-shown {
+    visibility: visible;
+}
+
+.ks-overlay-mask-shown {
+    display: block;
+}
+

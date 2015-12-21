@@ -1,0 +1,26 @@
+<div class="popup-wrap">
+    <span class="icon iconfont icon-close" id="J_close"></span>
+    <div class="cover-title">
+        <div class="range first-range" id="J_firstRange">
+            <span id="J_fstRangeText" data-code={{curSelectPlace.curProvCode}} data-value="{{curSelectPlace.curProvName}}" data-type=2>
+                {{curSelectPlace.curProvName}}
+            </span>
+            <span class="icon iconfont icon-down"></span>
+        </div>
+        <div class="range second-range selected" id="J_secondRange">
+            <span id="J_secRangeText" data-code={{curSelectPlace.curCityCode}} data-value="{{curSelectPlace.curCityName}}" data-type=3>
+                {{curSelectPlace.curCityName}}
+            </span>
+            <span class="icon iconfont icon-down"></span>
+        </div>
+    </div>
+    <div class="cover-body" id="J_coverBody">
+        <ul class="list">
+            {{#each(curSelectPlace.curSiblingCity)}}
+            <li class="list-item" data-code="{{this.code}}" data-value="{{this.name}}" data-type={{this.type}}>
+                {{this.name}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

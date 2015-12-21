@@ -1,0 +1,276 @@
+html{
+	font-size: 62.5%;/*1em,10px*/
+	}
+body {
+	font-family:  arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+	font-size: 1em;
+}
+a{
+	color: #fff;
+	}	
+ul{
+	list-style: none;
+	}
+
+#navbar{
+	 border: none;
+	 }	
+.navbar-default {
+	background-color: #000;
+	border-color: #e7e7e7;
+	opacity: 0.8;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus {
+    /*background-color: transparent;*/
+    color: #00e777;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav > .active > a:hover {
+	color: #00e676;
+	background-color: transparent;
+}
+
+
+.navbar{
+	font-size: 1em;/*10px*/
+	height: 50px;/*firefox:4em=50px但也有5em=50px;chrome：4em=50px;5em=60px;service.css,section-box：margin-top:50px*/
+	border: none;
+	padding:0 0;
+	margin: 0 0;
+	}
+.container > .navbar-header{
+	margin-left: 0;
+	}
+	
+/*小屏幕折叠的下拉导航条*/
+.collapse.in{
+	border: none;
+	}
+
+/*默认导航条*/	
+ul.nav > li, ul.nav > li > li{
+	font-size: 1.6em;/*16px*/
+	}
+ul.nav > li > a{
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background-color: transparent;
+	}
+ul.nav > li.bar a{
+	cursor: default;
+	}
+ul.nav > li.bar a:hover{
+	color: #FFF;
+	}
+ul.nav > li:last-child{
+	padding: 0 0;
+	}
+ul.nav > li.buy-now > a{
+	padding-top: 6px;
+	color: #000;
+	display: block;
+	}
+ul.nav > li.buy-now > a:hover{
+	color: #000;
+	cursor: pointer;
+	}
+ul.nav > li.buy-now{
+	margin-top:10px;
+	height: 30px;
+	border-radius: 3px;
+	background-color: #00e777;
+	}
+.nav ul [class^=buy]{
+	float: none;
+}
+/*.drop-down{
+	width: 100px;
+	background-color: #333;
+}*/
+ul.drop-down li.buy{
+	display: none;
+	padding: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+ul.drop-down li.buy:last-child{
+	/*padding-bottom: 0.2em;*/
+	}
+ul.drop-down li.buy a{
+	color: #fff;
+	border-radius: 4px;
+	padding: 0 0.5em;
+	display: block;
+	background-color: #434343;
+}
+.buy-now:hover {
+	-webkit-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	-moz-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	-ms-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	-o-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+}
+ul.drop-down li.buy a:hover {
+	color: #fff;
+	background-color: #00e676;
+	text-decoration: none;
+	-webkit-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	-moz-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	-ms-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	-o-filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+	filter: drop-shadow(0 1px 5px rgba(255,255,255,.5));
+}
+
+/*媒体查询*/
+@media screen and (min-width: 768px) {
+	.nav{
+		background-color: transparent;
+		}
+	ul.nav li.active{
+		box-shadow: 0px 2px 0px #00e777;
+		}
+	ul.drop-down{
+		color: #000;
+		border-radius: 5px;
+		background-color:#333;
+		padding: 0;
+		width: 100px;
+		}
+
+}
+@media screen and (max-width: 767px) {
+	.navbar-collapse.in{
+		overflow-y: visible;
+		}
+	.btn:active/*, .btn:hover*/{
+		background-color: #ddd;
+		}
+	 /*.btn:focus{
+		 background-color: #000;
+		 }*/
+	ul.nav > li{
+		padding: 0 0;
+		margin: 0 0;
+		background-color: transparent;
+		}
+	li.bar{
+		display: none;
+		border-bottom: 1px solid #808080;
+		}
+	ul.nav li.active{
+		box-shadow: none;
+		}	
+	ul.nav > li:first-child a{
+		border-top: 1px solid #808080;
+		}
+	#divide a{
+		border-bottom: 1px solid #808080;
+		}
+	ul.nav > li.buy-now{
+		margin-top:0px;
+		padding-bottom: 0px;
+		border-radius: 0;
+		}
+	ul.nav > li.buy-now > a, ul.nav > li.buy-now > a:hover{
+		border-radius: 0;
+		}
+	ul.nav > li.buy-now > a{
+		padding-top: 4px;
+		padding-bottom: 4px;
+		background-color: #00e777;
+		}
+	ul.drop-down{
+		text-align: center;
+		border: none;
+		background-color: transparent;
+		padding: 0 0;
+		color: #FFF;
+		/*visibility: visible;*/
+		}
+	ul.drop-down li.buy{
+		background-color: #00e777;	
+		padding-top: 0px;
+		padding-bottom: 0px;
+		}
+	ul.drop-down li.buy:last-child{
+		padding-bottom: 5px;
+		}
+	ul.drop-down li.buy a{
+		background-color: transparent;
+		color: #000;
+		}
+	ul.drop-down li.buy a:hover, ul.drop-down li.buy a:active {
+		color: #000;
+		background-color: #f1f1f1;
+		}
+	ul.drop-down li.buy a, ul.drop-down li.buy a:hover{
+		text-decoration: none;
+		box-shadow: none;
+		}		
+	footer ul { 
+		display: none;
+	}
+
+}
+
+
+
+
+
+/*----------------footer-----------------*/
+.wrapper footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 10px auto;
+	font-family: 'Microsoft YaHei';
+	font-size: 12px;
+	text-align: center;
+	z-index: 100;
+}
+.wrapper footer ul li {
+	display: inline;
+}
+.wrapper footer.footer-white{
+	color: #f1f1f1;
+	}
+.wrapper footer.footer-black{
+	color: #333333;
+	margin-top: 5em;
+	}
+footer p {
+	color: #9f9f9f;
+}
+.footer-img {
+	width: 17px;
+	height: 17px;
+	margin: 0 3px;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.footer-man-white {
+	background: url('../imgs/icons-group.png') no-repeat -93px -487px;
+}
+.footer-phone-white {
+	background: url('../imgs/icons-group.png') no-repeat -114px -487px;
+}
+.footer-email-white {
+	background: url('../imgs/icons-group.png') no-repeat -136px -487px;
+}
+.footer-addr-white {
+	background: url('../imgs/icons-group.png') no-repeat -158px -487px;
+}
+.footer-man-black {
+	background: url('../imgs/icons-group.png') no-repeat -7px -487px;
+}
+.footer-phone-black {
+	background: url('../imgs/icons-group.png') no-repeat -28px -487px;
+}
+.footer-email-black {
+	background: url('../imgs/icons-group.png') no-repeat -49px -487px;
+}
+.footer-addr-black {
+	background: url('../imgs/icons-group.png') no-repeat -73px -487px;
+}
