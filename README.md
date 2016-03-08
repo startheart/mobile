@@ -1,6 +1,6 @@
 ## 开发文档（create by yanting）
 
-### 极有家装修服务detail页面` 服务范围`组件
+### ` 服务范围`组件
 
 #### 1. 开发环境
 - [Gulp](http://www.gulpjs.com.cn/)部署开发环境
