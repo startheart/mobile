@@ -1,4 +1,4 @@
-## 开发文档（create by yanting）
+## 开发文档（create by sgoddon）
 
 ### ` 服务范围`组件
 
@@ -9,10 +9,10 @@
 - [xtemplate(kissy)](http://kpm.taobao.net/xtemplate/doc/guide/index.html)模板渲染
 
 #### 2. 拉取仓库
-- `git clone git@gitlab.alibaba-inc.com:cm/jiyoujia-decoration-service.git`
+- `git clone 
 - `git remote show origin`  查看远程分支
 - `git checkout x.x.x`  切换到最新的分支
-- `tnpm install`   安装依赖
+- `cnpm install`   安装依赖
 
 #### 3. 编码约定
 
